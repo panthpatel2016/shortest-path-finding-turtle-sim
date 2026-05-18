@@ -1,0 +1,42 @@
+[0.756s] Invoking command in '/home/panthpatel_/ros2_ws2/src/tars_sim': PYTHONPATH=/home/panthpatel_/ros2_ws2/build/tars_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tars_sim build --build-base /home/panthpatel_/ros2_ws2/build/tars_sim/build install --record /home/panthpatel_/ros2_ws2/build/tars_sim/install.log --single-version-externally-managed install_data
+[0.896s] running egg_info
+[0.896s] creating ../../build/tars_sim/tars_sim.egg-info
+[0.897s] writing ../../build/tars_sim/tars_sim.egg-info/PKG-INFO
+[0.897s] writing dependency_links to ../../build/tars_sim/tars_sim.egg-info/dependency_links.txt
+[0.897s] writing entry points to ../../build/tars_sim/tars_sim.egg-info/entry_points.txt
+[0.898s] writing requirements to ../../build/tars_sim/tars_sim.egg-info/requires.txt
+[0.898s] writing top-level names to ../../build/tars_sim/tars_sim.egg-info/top_level.txt
+[0.898s] writing manifest file '../../build/tars_sim/tars_sim.egg-info/SOURCES.txt'
+[0.899s] reading manifest file '../../build/tars_sim/tars_sim.egg-info/SOURCES.txt'
+[0.900s] writing manifest file '../../build/tars_sim/tars_sim.egg-info/SOURCES.txt'
+[0.900s] running build
+[0.900s] running build_py
+[0.901s] creating /home/panthpatel_/ros2_ws2/build/tars_sim/build
+[0.901s] creating /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib
+[0.901s] creating /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim
+[0.902s] copying tars_sim/tars_sim_node.py -> /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim
+[0.902s] copying tars_sim/__init__.py -> /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim
+[0.902s] running install
+[0.903s] running install_lib
+[0.903s] creating /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim
+[0.904s] copying /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim/tars_sim_node.py -> /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim
+[0.904s] copying /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim/__init__.py -> /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim
+[0.904s] byte-compiling /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim/tars_sim_node.py to tars_sim_node.cpython-310.pyc
+[0.905s] byte-compiling /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim/__init__.py to __init__.cpython-310.pyc
+[0.907s] running install_data
+[0.908s] creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/ament_index
+[0.908s] creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/ament_index/resource_index
+[0.908s] creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/ament_index/resource_index/packages
+[0.909s] copying resource/tars_sim -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/ament_index/resource_index/packages
+[0.909s] copying package.xml -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim
+[0.909s] creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/launch
+[0.910s] copying launch/tars_gazebo.launch.py -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/launch
+[0.910s] creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/urdf
+[0.911s] copying urdf/tars.urdf.xacro -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/urdf
+[0.911s] creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/config
+[0.911s] copying config/controllers.yaml -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/config
+[0.912s] running install_egg_info
+[0.914s] Copying ../../build/tars_sim/tars_sim.egg-info to /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim-0.0.1-py3.10.egg-info
+[0.915s] running install_scripts
+[0.930s] writing list of installed files to '/home/panthpatel_/ros2_ws2/build/tars_sim/install.log'
+[0.970s] Invoked command in '/home/panthpatel_/ros2_ws2/src/tars_sim' returned '0': PYTHONPATH=/home/panthpatel_/ros2_ws2/build/tars_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tars_sim build --build-base /home/panthpatel_/ros2_ws2/build/tars_sim/build install --record /home/panthpatel_/ros2_ws2/build/tars_sim/install.log --single-version-externally-managed install_data

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<robot name="tars" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Materials -->
+  <material name="tars_grey"><color rgba="0.55 0.55 0.58 1.0"/></material>
+  <material name="tars_dark"><color rgba="0.22 0.22 0.24 1.0"/></material>
+
+  <!-- Box geometry macro -->
+  <xacro:macro name="slab_visual_collision" params="mat">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.12 0.25 1.8"/></geometry>
+      <material name="${mat}"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><box size="0.12 0.25 1.8"/></geometry>
+    </collision>
+  </xacro:macro>
+
+  <!-- Inertia macro (solid box m=20kg, size=0.12x0.25x1.8) -->
+  <xacro:macro name="slab_inertial">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="20.0"/>
+      <inertia ixx="5.504167" ixy="0.0" ixz="0.0" iyy="5.424000" iyz="0.0" izz="0.128167"/>
+    </inertial>
+  </xacro:macro>
+
+  <!-- Links -->
+  <link name="slab_1">
+    <xacro:slab_inertial/>
+    <xacro:slab_visual_collision mat="tars_grey"/>
+  </link>
+  <link name="slab_2">
+    <xacro:slab_inertial/>
+    <xacro:slab_visual_collision mat="tars_grey"/>
+  </link>
+  <link name="slab_3">
+    <xacro:slab_inertial/>
+    <xacro:slab_visual_collision mat="tars_dark"/>
+  </link>
+  <link name="slab_4">
+    <xacro:slab_inertial/>
+    <xacro:slab_visual_collision mat="tars_grey"/>
+  </link>
+
+  <!-- Joints: chain along +Y, pitch around X -->
+  <joint name="slab_1_to_2" type="revolute">
+    <origin xyz="0 0.35 0" rpy="0 0 0"/>
+    <parent link="slab_1"/>
+    <child link="slab_2"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-2.0" upper="2.0" velocity="2.0" effort="50.0"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="slab_2_to_3" type="revolute">
+    <origin xyz="0 0.35 0" rpy="0 0 0"/>
+    <parent link="slab_2"/>
+    <child link="slab_3"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-2.0" upper="2.0" velocity="2.0" effort="50.0"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <joint name="slab_3_to_4" type="revolute">
+    <origin xyz="0 0.35 0" rpy="0 0 0"/>
+    <parent link="slab_3"/>
+    <child link="slab_4"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-2.0" upper="2.0" velocity="2.0" effort="50.0"/>
+    <dynamics damping="0.2" friction="0.0"/>
+  </joint>
+
+  <!-- Gazebo Classic physics bits per link (friction, contact) -->
+  <gazebo reference="slab_1">
+    <mu1>1.0</mu1><mu2>1.0</mu2>
+    <kp>1e6</kp><kd>1.0</kd>
+    <self_collide>true</self_collide>
+  </gazebo>
+  <gazebo reference="slab_2">
+    <mu1>1.0</mu1><mu2>1.0</mu2>
+    <kp>1e6</kp><kd>1.0</kd>
+    <self_collide>true</self_collide>
+  </gazebo>
+  <gazebo reference="slab_3">
+    <mu1>1.0</mu1><mu2>1.0</mu2>
+    <kp>1e6</kp><kd>1.0</kd>
+    <self_collide>true</self_collide>
+  </gazebo>
+  <gazebo reference="slab_4">
+    <mu1>1.0</mu1><mu2>1.0</mu2>
+    <kp>1e6</kp><kd>1.0</kd>
+    <self_collide>true</self_collide>
+  </gazebo>
+
+  <!-- ros2_control: use Gazebo Classic system interface -->
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so"/>
+  </gazebo>
+
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="slab_1_to_2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="slab_2_to_3">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="slab_3_to_4">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+</robot>

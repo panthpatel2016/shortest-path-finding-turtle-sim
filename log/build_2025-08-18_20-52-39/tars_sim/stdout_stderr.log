@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/tars_sim/tars_sim.egg-info
+writing ../../build/tars_sim/tars_sim.egg-info/PKG-INFO
+writing dependency_links to ../../build/tars_sim/tars_sim.egg-info/dependency_links.txt
+writing entry points to ../../build/tars_sim/tars_sim.egg-info/entry_points.txt
+writing requirements to ../../build/tars_sim/tars_sim.egg-info/requires.txt
+writing top-level names to ../../build/tars_sim/tars_sim.egg-info/top_level.txt
+writing manifest file '../../build/tars_sim/tars_sim.egg-info/SOURCES.txt'
+reading manifest file '../../build/tars_sim/tars_sim.egg-info/SOURCES.txt'
+writing manifest file '../../build/tars_sim/tars_sim.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/panthpatel_/ros2_ws2/build/tars_sim/build
+creating /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib
+creating /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim
+copying tars_sim/tars_sim_node.py -> /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim
+copying tars_sim/__init__.py -> /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim
+running install
+running install_lib
+creating /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim
+copying /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim/tars_sim_node.py -> /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim
+copying /home/panthpatel_/ros2_ws2/build/tars_sim/build/lib/tars_sim/__init__.py -> /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim
+byte-compiling /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim/tars_sim_node.py to tars_sim_node.cpython-310.pyc
+byte-compiling /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/ament_index
+creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/ament_index/resource_index
+creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/ament_index/resource_index/packages
+copying resource/tars_sim -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/ament_index/resource_index/packages
+copying package.xml -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim
+creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/launch
+copying launch/tars_gazebo.launch.py -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/launch
+creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/urdf
+copying urdf/tars.urdf.xacro -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/urdf
+creating /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/config
+copying config/controllers.yaml -> /home/panthpatel_/ros2_ws2/install/tars_sim/share/tars_sim/config
+running install_egg_info
+Copying ../../build/tars_sim/tars_sim.egg-info to /home/panthpatel_/ros2_ws2/install/tars_sim/lib/python3.10/site-packages/tars_sim-0.0.1-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/panthpatel_/ros2_ws2/build/tars_sim/install.log'

@@ -1,0 +1,25 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    tars_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+tars_controller:
+  ros__parameters:
+    joints:
+      - slab_1_to_2
+      - slab_2_to_3
+      - slab_3_to_4
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    allow_partial_joints_goal: true
+    constraints:
+      stopped_velocity_tolerance: 0.01
+      goal_time: 2.0

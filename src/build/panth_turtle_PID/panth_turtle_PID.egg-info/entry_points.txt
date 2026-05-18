@@ -1,0 +1,3 @@
+[console_scripts]
+PID_node = panth_turtle_PID.PID_node:main
+

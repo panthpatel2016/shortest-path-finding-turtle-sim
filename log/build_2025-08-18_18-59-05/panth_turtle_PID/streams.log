@@ -1,0 +1,24 @@
+[0.437s] Invoking command in '/home/panthpatel_/ros2_ws2/src/panth_turtle_PID': PYTHONPATH=/home/panthpatel_/ros2_ws2/build/panth_turtle_PID/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/panthpatel_/ros2_ws2/install/panth_turtle_PID/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/panth_turtle_PID build --build-base /home/panthpatel_/ros2_ws2/build/panth_turtle_PID/build install --record /home/panthpatel_/ros2_ws2/build/panth_turtle_PID/install.log --single-version-externally-managed install_data
+[0.609s] running egg_info
+[0.610s] writing ../../build/panth_turtle_PID/panth_turtle_PID.egg-info/PKG-INFO
+[0.610s] writing dependency_links to ../../build/panth_turtle_PID/panth_turtle_PID.egg-info/dependency_links.txt
+[0.610s] writing entry points to ../../build/panth_turtle_PID/panth_turtle_PID.egg-info/entry_points.txt
+[0.610s] writing requirements to ../../build/panth_turtle_PID/panth_turtle_PID.egg-info/requires.txt
+[0.611s] writing top-level names to ../../build/panth_turtle_PID/panth_turtle_PID.egg-info/top_level.txt
+[0.613s] reading manifest file '../../build/panth_turtle_PID/panth_turtle_PID.egg-info/SOURCES.txt'
+[0.613s] writing manifest file '../../build/panth_turtle_PID/panth_turtle_PID.egg-info/SOURCES.txt'
+[0.614s] running build
+[0.614s] running build_py
+[0.614s] copying panth_turtle_PID/PID_node.py -> /home/panthpatel_/ros2_ws2/build/panth_turtle_PID/build/lib/panth_turtle_PID
+[0.614s] running install
+[0.615s] running install_lib
+[0.615s] copying /home/panthpatel_/ros2_ws2/build/panth_turtle_PID/build/lib/panth_turtle_PID/PID_node.py -> /home/panthpatel_/ros2_ws2/install/panth_turtle_PID/lib/python3.10/site-packages/panth_turtle_PID
+[0.616s] byte-compiling /home/panthpatel_/ros2_ws2/install/panth_turtle_PID/lib/python3.10/site-packages/panth_turtle_PID/PID_node.py to PID_node.cpython-310.pyc
+[0.618s] running install_data
+[0.618s] running install_egg_info
+[0.621s] removing '/home/panthpatel_/ros2_ws2/install/panth_turtle_PID/lib/python3.10/site-packages/panth_turtle_PID-0.0.0-py3.10.egg-info' (and everything under it)
+[0.621s] Copying ../../build/panth_turtle_PID/panth_turtle_PID.egg-info to /home/panthpatel_/ros2_ws2/install/panth_turtle_PID/lib/python3.10/site-packages/panth_turtle_PID-0.0.0-py3.10.egg-info
+[0.623s] running install_scripts
+[0.642s] Installing PID_node script to /home/panthpatel_/ros2_ws2/install/panth_turtle_PID/lib/panth_turtle_PID
+[0.643s] writing list of installed files to '/home/panthpatel_/ros2_ws2/build/panth_turtle_PID/install.log'
+[0.669s] Invoked command in '/home/panthpatel_/ros2_ws2/src/panth_turtle_PID' returned '0': PYTHONPATH=/home/panthpatel_/ros2_ws2/build/panth_turtle_PID/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/panthpatel_/ros2_ws2/install/panth_turtle_PID/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/panth_turtle_PID build --build-base /home/panthpatel_/ros2_ws2/build/panth_turtle_PID/build install --record /home/panthpatel_/ros2_ws2/build/panth_turtle_PID/install.log --single-version-externally-managed install_data

@@ -1,0 +1,6 @@
+source;share/panth_turtle_PID/hook/pythonpath.ps1
+source;share/panth_turtle_PID/hook/pythonpath.dsv
+source;share/panth_turtle_PID/hook/pythonpath.sh
+source;share/panth_turtle_PID/hook/ament_prefix_path.ps1
+source;share/panth_turtle_PID/hook/ament_prefix_path.dsv
+source;share/panth_turtle_PID/hook/ament_prefix_path.sh
